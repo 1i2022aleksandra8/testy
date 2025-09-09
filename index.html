@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atrakcje w Polsce</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dodaj atrakcję turystyczną</title>
+  <style>
+    body { background-color: #9577e7; font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; }
+    .form-wrapper { background-color: white; padding: 20px; border-radius: 10px; display: inline-block; }
+    .attraction-list { margin-top: 20px; }
+    .attraction-item { background-color: #f0f0f0; margin: 10px 0; padding: 10px; border-radius: 5px; }
+    label { display: block; margin-top: 10px; }
+    button { margin-top: 15px; padding: 8px 12px; background-color: #ac87c4; border: none; cursor: pointer; }
+    button:hover { background-color: #332544; color: white; }
+  </style>
 </head>
-<style>
-
-</style>
 <body>
-    <input id="name" type="text" placeholder="Wpisz nazwe swoich atrakcji"><br><br>
-    
+  <div class="form-wrapper">
+    <h1>Dodaj atrakcję turystyczną</h1>
+
+    <label for="region">Wybierz województwo:</label>
+    <select id="region">
+      <option value="">-- Wybierz --</option>
+      <option value="Śląskie">Śląskie</option>
+      <option value="Małopolskie">Małopolskie</option>
+      <option value="Pomorskie">Pomorskie</option>
+      <option value="Mazowieckie">Mazowieckie</option>
+    </select>
 </body>
 </html>
